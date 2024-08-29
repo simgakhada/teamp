@@ -29,8 +29,36 @@ public class Application
             case '*':
                 break;
             case '/':
+                double result = (double) a / b;
+                if(b != 0)
+                    System.out.println("Result of " + a + " " + c + " " + b + " is " + result);
+                else
+                    try
+                    {
+                        throw new Exception("Divide by zero");
+                    }
+                    catch (Exception e)
+                    {
+                        System.out.println("Exception");
+                        e.printStackTrace();
+                    }
                 break;
             case '%':
+                if(b != 0)
+                    System.out.println("Result of " + a + " " + c + " " + b + " is " + (a % b));
+                else
+                    try
+                    {
+                        throw new Exception("Divide by zero");
+                    }
+                    catch (Exception e)
+                    {
+                        System.out.println("Exception");
+                        e.printStackTrace();
+                    }
+                break;
+
+            default:
                 break;
         }
     }
