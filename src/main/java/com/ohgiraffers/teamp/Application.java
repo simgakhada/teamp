@@ -66,6 +66,6 @@ public class Application
     public static int plus(int a, int b) {
         int sum = a + b;
         return sum;
-    }
 
+    }
 }
