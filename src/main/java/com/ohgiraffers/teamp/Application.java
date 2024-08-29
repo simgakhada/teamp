@@ -22,6 +22,7 @@ public class Application
         switch (c)
         {
             case '+':
+                System.out.println(plus(a,b));
                 break;
             case '-':
                 int result = minus(a, b);
@@ -63,7 +64,15 @@ public class Application
                 break;
         }
     }
+
+
+    public static int plus(int a, int b) {
+        int sum = a + b;
+
+        return sum;
+    }
     public static int minus(int a, int b){
         return a - b;
+
     }
 }
