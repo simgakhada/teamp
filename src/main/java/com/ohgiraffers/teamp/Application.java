@@ -22,6 +22,7 @@ public class Application
         switch (c)
         {
             case '+':
+                System.out.println(plus(a,b));
                 break;
             case '-':
                 break;
@@ -33,4 +34,10 @@ public class Application
                 break;
         }
     }
+
+    public static int plus(int a, int b) {
+        int sum = a + b;
+        return sum;
+    }
+
 }
