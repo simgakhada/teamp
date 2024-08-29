@@ -24,13 +24,15 @@ public class Application
             case '+':
                 break;
             case '-':
+                int result = minus(a, b);
+                System.out.println(result);
                 break;
             case '*':
                 break;
             case '/':
-                double result = (double) a / b;
+                double result2 = (double) a / b;
                 if(b != 0)
-                    System.out.println("Result of " + a + " " + c + " " + b + " is " + result);
+                    System.out.println("Result of " + a + " " + c + " " + b + " is " + result2);
                 else
                     try
                     {
@@ -60,5 +62,8 @@ public class Application
             default:
                 break;
         }
+    }
+    public static int minus(int a, int b){
+        return a - b;
     }
 }
